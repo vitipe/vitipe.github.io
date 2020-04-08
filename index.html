@@ -13,8 +13,8 @@
         #map {
             position:relative
             width: 100%;
-            height: 79vh; 
-        }
+            height: 79vh;
+        } 
         </style>
         <title></title>
     </head>
@@ -25,19 +25,19 @@
                     <img src="images/UNS_Fondo_Blanco.png" alt="LogoLabgeot"style="width:11vh;height:11vh;"align="left">
             </a>
             <a href="https://www.labgeot.uns.edu.ar/"target="_blank">
-                <img src="images/lab06.png" alt="LogoLabgeot"style="width:32vh;height:12vh;">
+                <img src="images/lab06.png" alt="LogoLabgeot"style="width:32.5vh;height:11.7vh;">
             </a>
             <a href="http://www.geografiayturismo.uns.edu.ar/"target="_blank">
-                <img src="images/mundo3.png" alt="LogoLabgeot"style="width:11vh;height:11vh;"align="right">
+                <img src="images/mundo3.png" alt="LogoLabgeot"style="width:11.7vh;height:11.7vh;"align="right">
             </a>
         </div>
-
+    
         <div id="titulo">
             <form action="https://forms.gle/W4fjVn65rxbJwoDV8"target="_blank">
                 <input id='formulario' type="submit" value="Agregue su comercio y/o servicio"/>
             </form>
             <h1>Logística y servicios</h1>
-                <button id='documento'><a href="documento-proyecto/Por qué este sitio web.pdf">¿Por qué este sitio web?</a></button>
+                <button id='documento'><a href="documento-proyecto/Por qué este sitio web.pdf"target="_blank">¿Por qué este sitio web?</a></button>
             <h2>Información geográfica georreferenciada</h2>  
         </div>
         <!--Esto de abajo ya es lo de qgis2web-->
@@ -78,7 +78,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[-38.739219762013086,-62.304932575610124],[-38.69448225993275,-62.21025436335262]]);
+        }).fitBounds([[-38.739219762013086,-62.305216894565845],[-38.69448225993275,-62.20997004439694]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var measureControl = new L.Control.Measure({
@@ -116,10 +116,6 @@
                 mouseover: highlightFeature,
             });
             var popupContent = '<table>\
-                    <tr>\
-                        <th scope="row">fid</th>\
-                        <td>' + (feature.properties['fid'] !== null ? Autolinker.link(feature.properties['fid'].toLocaleString()) : '') + '</td>\
-                    </tr>\
                     <tr>\
                         <th scope="row">Barrio</th>\
                         <td>' + (feature.properties['name'] !== null ? Autolinker.link(feature.properties['name'].toLocaleString()) : '') + '</td>\
@@ -679,7 +675,7 @@
         bounds_group.addLayer(layer_SupermercadoAutoservicio_7);
         map.addLayer(layer_SupermercadoAutoservicio_7);
         var baseMaps = {};
-        L.control.layers(baseMaps,{'<img src="legend/SupermercadoAutoservicio_7.png" /> Supermercado-Autoservicio': layer_SupermercadoAutoservicio_7,'<img src="legend/Serviciosveterinarios_6.png" /> Servicios veterinarios': layer_Serviciosveterinarios_6,'<img src="legend/Serviciosdesalud_5.png" /> Servicios de salud': layer_Serviciosdesalud_5,'<img src="legend/Farmacias_4.png" /> Farmacias': layer_Farmacias_4,'<img src="legend/Centrosdesalud_3.png" /> Centros de salud': layer_Centrosdesalud_3,'<img src="legend/BancosCajeros_2.png" /> Bancos-Cajeros': layer_BancosCajeros_2,'Recolección de residuos<br /><table><tr><td style="text-align: center;"><img src="legend/Recoleccinderesiduos_1_DomingoMartesyJuevesDe22a50.png" /></td><td>Domingo, Martes y Jueves  De 22 a 5</td></tr><tr><td style="text-align: center;"><img src="legend/Recoleccinderesiduos_1_LunesMiercolesyViernesDe22a51.png" /></td><td>Lunes, Miercoles y Viernes  De 22 a 5</td></tr><tr><td style="text-align: center;"><img src="legend/Recoleccinderesiduos_1_LunesMiercolesyViernesDe6a142.png" /></td><td>Lunes, Miercoles y Viernes De 6 a 14</td></tr><tr><td style="text-align: center;"><img src="legend/Recoleccinderesiduos_1_MartesJuevesySabadoDe6a143.png" /></td><td>Martes, Jueves y Sabado De 6 a 14</td></tr></table>': layer_Recoleccinderesiduos_1,"OSM Standard": layer_OSMStandard_0,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'<img src="legend/SupermercadoAutoservicio_7.png" /> Supermercado-Autoservicio': layer_SupermercadoAutoservicio_7,'<img src="legend/Serviciosveterinarios_6.png" /> Servicios veterinarios': layer_Serviciosveterinarios_6,'<img src="legend/Serviciosdesalud_5.png" /> Servicios de salud': layer_Serviciosdesalud_5,'<img src="legend/Farmacias_4.png" /> Farmacias': layer_Farmacias_4,'<img src="legend/Centrosdesalud_3.png" /> Centros de salud': layer_Centrosdesalud_3,'<img src="legend/BancosCajeros_2.png" /> Bancos-Cajeros': layer_BancosCajeros_2,'Recolección de residuos<br /><table><tr><td style="text-align: center;"><img src="legend/Recoleccinderesiduos_1_DomingoMartesyJuevesDe22a50.png" /></td><td>Domingo, Martes y Jueves  De 22 a 5</td></tr><tr><td style="text-align: center;"><img src="legend/Recoleccinderesiduos_1_LunesMiercolesyViernesDe22a51.png" /></td><td>Lunes, Miercoles y Viernes  De 22 a 5</td></tr><tr><td style="text-align: center;"><img src="legend/Recoleccinderesiduos_1_LunesMiercolesyViernesDe6a142.png" /></td><td>Lunes, Miercoles y Viernes De 6 a 14</td></tr><tr><td style="text-align: center;"><img src="legend/Recoleccinderesiduos_1_MartesJuevesySabadoDe6a143.png" /></td><td>Martes, Jueves y Sabado De 6 a 14</td></tr></table>': layer_Recoleccinderesiduos_1,"OSM Standard": layer_OSMStandard_0,}).addTo(map);
         setBounds();
         </script>
     </body>
