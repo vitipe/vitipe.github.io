@@ -21,7 +21,7 @@
     <body>
         <!--De acá hasta lo comentado abajo es lo agregado sobre lo que saca el qgis2web-->
         <div class="header">
-            <a href="http://www.uns.edu.ar/"target="_blank">
+            <a href="https://www.uns.edu.ar/"target="_blank">
                     <img src="images/UNS_Fondo_Blanco.png" alt="LogoLabgeot"style="width:11vh;height:11vh;"align="left">
             </a>
             <a href="https://www.labgeot.uns.edu.ar/"target="_blank">
@@ -37,7 +37,7 @@
                 <input id='formulario' type="submit" value="Agregue su comercio y/o servicio"/>
             </form>
             <h1>Logística y servicios</h1>
-                <button id='documento'><a href="documento-proyecto/Por qué este sitio web.pdf"target="_blank">¿Por qué este sitio web?</a></button>
+            <button id='documento' onClick="window.open('https://www.labgeot.uns.edu.ar/741-2/')"target="_blank">¿Por qué este sitio web?</button>
             <h2>Información geográfica georreferenciada</h2>  
         </div>
         <!--Esto de abajo ya es lo de qgis2web-->
@@ -96,7 +96,7 @@
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
-        var layer_OSMStandard_0 = L.tileLayer('http://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        var layer_OSMStandard_0 = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             opacity: 1.0,
             attribution: '<a href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</a>',
             minZoom: 1,

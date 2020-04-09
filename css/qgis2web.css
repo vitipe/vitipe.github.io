@@ -139,9 +139,9 @@
                             text-align: center;
                           }
                         #formulario {
-                            margin-top: 0.0rem;
-                            padding: 0.5rem 1.5rem;
-                            border-radius: 0.25rem;
+                            margin-top: 0vh;
+                            padding: 1.04vh 3.12vh;
+                            border-radius: 8.34vh;
                             box-shadow: none;
                             border: none;
                             font-weight: 700;
@@ -150,9 +150,9 @@
                             float: left;
                         }
                         #documento {
-                            margin-top: 0.0rem;
-                            padding: 0.25rem 1.5rem;
-                            border-radius: 0.25rem;
+                            margin-top: 0vh;
+                            padding: 1.04vh 3.12vh;
+                            border-radius: 8.34vh;
                             box-shadow: none;
                             border: none;
                             font-weight: 700;
