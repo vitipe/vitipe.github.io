@@ -1,0 +1,68 @@
+.container-tablero {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 500px;
+    width: 600px;
+}
+
+#tablero-juego {
+    background-color: lightgray;
+}
+
+#cuadro-1 {
+    background-color:#1ad771;
+    opacity: 40%;
+}
+
+#cuadro-2 {
+    background-color:#fb472e;
+    opacity: 40%;
+}
+
+#cuadro-3 {
+    background-color:#f5f821;
+    opacity: 40%;
+}
+
+#cuadro-4 {
+    background-color:#1e98db;
+    opacity: 40%;
+}
+
+body {
+    background-color: rgb(226, 226, 226);
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 650px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    font-family: monospace;
+}
+
+button {
+    font-family: monospace;
+}
+
+strong {
+    font-family: monospace;
+}
+
+.oculto {
+    display: none;
+}
+
+#error-jugada {
+    font-size: 32px;
+    color: red;
+}
+
+#div-tapa-jugada {
+    opacity: 0%;
+}
