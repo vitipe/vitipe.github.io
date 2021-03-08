@@ -1,5 +1,6 @@
 let jugadaUsuario = [];
 let jugadaComputadora = crearJugadaComputadora();
+bloquearClickUsuario();
 cambiarTituloPagina('SIMON DICE')
 
 function obtenerNumeroRandom() {
