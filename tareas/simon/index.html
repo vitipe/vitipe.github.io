@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>&#127922 Simon dice</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='node_modules\bootstrap\dist\css\bootstrap.min.css'>
+</head>
+<nav class="navbar navbar-light bg-light">
+    <span class="navbar-brand mb-0 h1" id="cartel-bienvenida">Bienvenido al Simon dice!</span>
+    <strong class="oculto" id="error-jugada">Le erraste :(</strong>
+    <button id="boton-jugar" class="btn btn-primary">Jugar</button>
+</nav>
+<body>
+    <form id="form-juego">
+        <div class="container" id="tablero-juego">
+            <div class="row">
+                <div class="col-sm">
+                    <div id="cuadro-1" class="cuadro">1</div>
+                </div>
+                <div class="col-sm">
+                    <div id="cuadro-2" class="cuadro">
+                        <p>2</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div id="cuadro-3" class="cuadro">
+                        <p>3</p>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div id="cuadro-4" class="cuadro">
+                        <p>4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <p id="turno-usuario">Turno #1</p>
+                    <strong class="oculto" id="error-jugada">Le erraste :(</strong>
+                    <div id="botones-juego">
+                        <button class="oculto" id="boton-continuar-juego">Querés intentar de nuevo?</button>
+                        <button class="oculto" id="boton-reinicio-juego">Querés comenzar de nuevo?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+<script src='js/calculos.js'></script>
+<script src='js/pruebas.js'></script>
+</html>
